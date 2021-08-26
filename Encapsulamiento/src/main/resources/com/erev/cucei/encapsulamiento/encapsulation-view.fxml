@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+      fx:controller="com.erev.cucei.encapsulamiento.EncapsulationController">
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+        <padding>
+            <Insets top="50.0"/>
+        </padding>
+        <Label fx:id="dateLabel" text="Fecha"/>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <Label text="Dia"/>
+            <TextField fx:id="dayTextField"/>
+            <Label layoutX="10.0" layoutY="10.0" text="Mes"/>
+            <TextField fx:id="monthTextField"/>
+            <Label layoutX="187.0" layoutY="10.0" text="Año"/>
+            <TextField fx:id="yearTextField"/>
+        </HBox>
+    </VBox>
+</Pane>
