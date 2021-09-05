@@ -45,8 +45,7 @@
         <java.version>16</java.version>
 
         <!-- Project path-->
-        <artifactWithGroup>${project.groupId}.${project.artifactId}</artifactWithGroup>
-        <mainClassPath>${artifactWithGroup}/${artifactWithGroup}</mainClassPath>
+        <mainClassPath>${project.groupId}.${project.artifactId}</mainClassPath>
     </properties>
 
     <dependencies>
@@ -106,7 +105,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>${exec-maven-plugin.version}</version>
                 <configuration>
-                    <mainClass>${mainClassPath}.Encapsulamiento</mainClass>
+                    <mainClass>${mainClassPath}.CadenaBytes</mainClass>
                     <arguments>
                         <argument>argument1</argument>
                     </arguments>
