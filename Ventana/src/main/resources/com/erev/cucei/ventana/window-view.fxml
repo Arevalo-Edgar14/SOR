@@ -4,31 +4,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2">
-   <VBox prefHeight="400.0" prefWidth="600.0" spacing="30.0">
-      <opaqueInsets>
-         <Insets/>
-      </opaqueInsets>
-      <padding>
-         <Insets bottom="15.0" left="15.0" right="15.0" top="20.0"/>
-      </padding>
-      <TextField prefWidth="570.0" promptText="Insert text on north"/>
-      <TextArea editable="false" prefHeight="352.0" prefWidth="570.0"
-                promptText="Insert text on textArea on Center"/>
-      <HBox alignment="CENTER" spacing="20.0">
-         <AnchorPane prefHeight="200.0" prefWidth="200.0">
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Izquierda"
-                    textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
-         </AnchorPane>
-         <AnchorPane prefHeight="200.0" prefWidth="200.0">
-            <Button alignment="CENTER" mnemonicParsing="false" text="Centro" textAlignment="CENTER"
-                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
-         </AnchorPane>
-         <AnchorPane prefHeight="200.0" prefWidth="200.0">
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Derecha"
-                    textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
-         </AnchorPane>
-      </HBox>
-   </VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.erev.cucei.ventana.WindowController">
+    <VBox prefHeight="400.0" prefWidth="600.0" spacing="30.0">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="20.0" />
+        </padding>
+        <TextField id="textField" fx:id="textField" prefWidth="570.0" promptText="Insert text on north" />
+        <TextArea id="textArea" fx:id="textArea" disable="true" editable="false" prefHeight="352.0" prefWidth="570.0" promptText="Insert text on textArea on Center" />
+        <HBox alignment="CENTER" spacing="20.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                <Button id="leftButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#leftOnClick" text="Izquierda" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                <Button id="centerButton" alignment="CENTER" mnemonicParsing="false" onAction="#centerOnClick" text="Centro" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                <Button id="rigthButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#rightOnClick" text="Derecha" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            </AnchorPane>
+        </HBox>
+    </VBox>
 </Pane>
