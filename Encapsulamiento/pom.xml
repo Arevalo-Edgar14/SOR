@@ -10,14 +10,16 @@
     <name>Encapsulamiento</name>
     <packaging>jar</packaging>
     <description>
-        SOR Tarea 1: Encapsulamiento, help to remember how to use Encapsulation on Java
+        SOR Homework 1: Information binding and encapsulation.
+        Objective: Apply encapsulation knowledge to bind the details of the class implementation.
+        Description: Encapsulation, help to remember how to use Encapsulation on Java
         Create a MyDate Class with day/month/year attributes and validate them.
     </description>
-    <url>https:</url>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
     <licenses>
         <license>
             <name>Apache License</name>
-            <url>http://www.apache.org/licenses/</url>
+            <url>https://www.apache.org/licenses/</url>
         </license>
     </licenses>
     <developers>

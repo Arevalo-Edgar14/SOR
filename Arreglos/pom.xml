@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.erev.cucei</groupId>
-    <artifactId>conversor</artifactId>
+    <artifactId>arreglos</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Conversor</name>
+    <name>Arreglos</name>
     <packaging>jar</packaging>
     <description>
-        SOR Homework 2: Bit manage operators.
-        Objective: Learn to use the bit operators and know how data seem in the RAM.
-        Description: Class implementation with the methods that print the RAM integer stored binary sequence.
+        SOR Homework 7: Character Arrays.
+        Objective: Train the array usage.
+        Description: Implement a subroutine that modify inside of it the array content received as a parameter.
     </description>
-    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
+    <url>https:</url>
     <licenses>
         <license>
             <name>Apache License</name>
@@ -108,7 +108,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>${exec-maven-plugin.version}</version>
                 <configuration>
-                    <mainClass>${mainClassPath}.Conversor</mainClass>
+                    <mainClass>${mainClassPath}.Arreglos</mainClass>
                     <arguments>
                         <argument>argument1</argument>
                     </arguments>

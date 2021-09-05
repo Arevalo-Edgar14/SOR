@@ -5,14 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.erev.cucei</groupId>
-    <artifactId>conversor</artifactId>
+    <artifactId>proceso</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Conversor</name>
+    <name>Proceso</name>
     <packaging>jar</packaging>
     <description>
-        SOR Homework 2: Bit manage operators.
-        Objective: Learn to use the bit operators and know how data seem in the RAM.
-        Description: Class implementation with the methods that print the RAM integer stored binary sequence.
+        SOR Homework 6: Parameter passing.
+        Objective: Understand the implications of the parameter passing by reference.
+        Description: Implement a program tha prove the difference between passing by value and passing by reference,
+        where the main program looks like the next:
+        Public static void main(String[] args) {
+            Proceso p=new Proceso();
+            int a=8;
+            int ar[]=new int[1];
+            ar[0]=a;
+            p.valor(a, a);
+            p.referencia(ar,ar);
+        }
     </description>
     <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
     <licenses>
@@ -108,7 +117,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>${exec-maven-plugin.version}</version>
                 <configuration>
-                    <mainClass>${mainClassPath}.Conversor</mainClass>
+                    <mainClass>${mainClassPath}.ClaseAdministradora</mainClass>
                     <arguments>
                         <argument>argument1</argument>
                     </arguments>

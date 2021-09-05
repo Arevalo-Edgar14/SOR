@@ -10,13 +10,15 @@
     <name>CadenaBytes</name>
     <packaging>jar</packaging>
     <description>
-        SOR Tarea 3: Cadena de Bytes, .
+        SOR Homework 3: Strings into Bytes arrays.
+        Objective: Lear to store byte arrays and retrieve the stored contend to print.
+        Description: Write the characters from a String into a byte array.
     </description>
-    <url>https:</url>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
     <licenses>
         <license>
             <name>Apache License</name>
-            <url>http://www.apache.org/licenses/</url>
+            <url>https://www.apache.org/licenses/</url>
         </license>
     </licenses>
     <developers>
