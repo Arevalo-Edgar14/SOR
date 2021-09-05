@@ -10,13 +10,15 @@
     <name>Conversor</name>
     <packaging>jar</packaging>
     <description>
-        SOR Tarea 2: Learn to use the bit operators and know how data seem in the RAM.
+        SOR Homework 2: Bit manage operators.
+        Objective: Learn to use the bit operators and know how data seem in the RAM.
+        Description: Class implementation with the methods that print the RAM integer stored binary sequence.
     </description>
-    <url>https:</url>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
     <licenses>
         <license>
             <name>Apache License</name>
-            <url>http://www.apache.org/licenses/</url>
+            <url>https://www.apache.org/licenses/</url>
         </license>
     </licenses>
     <developers>

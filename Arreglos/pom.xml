@@ -10,7 +10,9 @@
     <name>Arreglos</name>
     <packaging>jar</packaging>
     <description>
-        SOR Tarea 7: .
+        SOR Homework 7: Character Arrays.
+        Objective: Train the array usage.
+        Description: Implement a subroutine that modify inside of it the array content received as a parameter.
     </description>
     <url>https:</url>
     <licenses>

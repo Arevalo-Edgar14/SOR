@@ -10,13 +10,31 @@
     <name>Ventana</name>
     <packaging>jar</packaging>
     <description>
-        SOR Tarea 4: Ventana, .
+        SOR Homework 4: Graphic interface.
+        Objective: Know to implement the step by step an application with graphic components.
+        Description: Implement a easy graphic interface. The interface need a panel to add 3 buttons and implement a
+        windowListener, to only add the components as indicated in the requirements.
+        Requirement:
+        1. Implement a class to abstract a graphic interface.
+        2. The attributes needs the next components:
+        3. A Text Field added at the north
+        4. A Text Area added at the center
+        5. 3 buttons added at south (Is needed to ad a panel with the 3 Buttons).
+        6. Is required that the Window had a title, assigned size, that the text area is not editable, and allow to
+        close the window with the "X".
+        7. Add a constructor in the class
+        8. Before to execute the constructor, the object needs to had al the configured interface.
+        9. Do not add the event handling because this will be required in the Activity #5.
+        SOR Homework 5: Event handler
+        Objective: Learn to add the event handling through a listener.
+        Description: Extend the easy graphic interface from the Activity #5, adding the event handling for pushing the
+        buttons at the south area.
     </description>
-    <url>https:</url>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
     <licenses>
         <license>
             <name>Apache License</name>
-            <url>http://www.apache.org/licenses/</url>
+            <url>https://www.apache.org/licenses/</url>
         </license>
     </licenses>
     <developers>
