@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.erev.cucei</groupId>
+    <artifactId>tokyo2020</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>Tokyo2020</name>
+    <packaging>jar</packaging>
+    <description>
+        Exam 1: Implement java homework 4 and 5
+    </description>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${project.name}</url>
+    <licenses>
+        <license>
+            <name>Apache License</name>
+            <url>https://www.apache.org/licenses/</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>erev14</id>
+            <name>Edgar Joel Arévalo Chavarín</name>
+            <email>erevjoach14@gmail.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Junit -->
+        <junit.version>5.7.2</junit.version>
+        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <junit-platform-surefire-provider.version>1.1.0</junit-platform-surefire-provider.version>
+
+        <!-- Java FX-->
+        <javafx.version>16</javafx.version>
+        <javafx-maven-plugin>0.0.6</javafx-maven-plugin>
+
+        <!-- Maven -->
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+
+        <!-- Java -->
+        <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+        <java.version>16</java.version>
+
+        <!-- Project path-->
+        <artifactWithGroup>${project.groupId}.${project.artifactId}</artifactWithGroup>
+        <mainClassPath>${artifactWithGroup}/${artifactWithGroup}</mainClassPath>
+    </properties>
+
+    <dependencies>
+        <!-- Java FX-->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <!-- Junit -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven -->
+            <plugin>
+                <!-- Plugin to have maven Lifecycle -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Junit -->
+            <plugin>
+                <!-- Plugin to make test works with junit 5-->
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${junit-platform-surefire-provider.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <!-- Java FX-->
+            <plugin>
+                <!-- Plugin to make javafx:run available to run javaFx Application-->
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>${javafx-maven-plugin}</version>
+                <executions>
+                    <execution>
+                        <!-- Default configuration for running with: mvn clean javafx:run -->
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>${mainClassPath}.Tokyo2020Application</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
