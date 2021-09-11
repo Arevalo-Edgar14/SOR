@@ -30,7 +30,7 @@
         Description: Extend the easy graphic interface from the Activity #5, adding the event handling for pushing the
         buttons at the south area.
     </description>
-    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${name}</url>
+    <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${project.name}</url>
     <licenses>
         <license>
             <name>Apache License</name>
