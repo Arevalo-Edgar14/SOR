@@ -5,31 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.erev.cucei</groupId>
-    <artifactId>ventana</artifactId>
+    <artifactId>hilos</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Ventana</name>
+    <name>Hilos</name>
     <packaging>jar</packaging>
     <description>
-        SOR Homework 4: Graphic interface.
-        Objective: Know to implement the step by step an application with graphic components.
-        Description: Implement a easy graphic interface. The interface need a panel to add 3 buttons and implement a
-        windowListener, to only add the components as indicated in the requirements.
-        Requirement:
-        1. Implement a class to abstract a graphic interface.
-        2. The attributes needs the next components:
-        3. A Text Field added at the north
-        4. A Text Area added at the center
-        5. 3 buttons added at south (Is needed to ad a panel with the 3 Buttons).
-        6. Is required that the Window had a title, assigned size, that the text area is not editable, and allow to
-        close the window with the "X".
-        7. Add a constructor in the class
-        8. Before to execute the constructor, the object needs to had al the configured interface.
-        9. Do not add the event handling because this will be required in the Activity #5.
-        SOR Homework 5: Event handler
-        Objective: Learn to add the event handling through a listener.
-        Description: Extend the easy graphic interface from the Activity #5, adding the event handling for pushing the
-        buttons at the south area.
+        SOR Homework 9: Threads.
+
     </description>
+
     <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${project.name}</url>
     <licenses>
         <license>
@@ -50,6 +34,7 @@
         <maven.compiler.target>16</maven.compiler.target>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <!-- Junit -->
         <junit.version>5.7.2</junit.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
@@ -68,7 +53,6 @@
 
         <!-- Project path-->
         <artifactWithGroup>${project.groupId}.${project.artifactId}</artifactWithGroup>
-        <mainClassPath>${artifactWithGroup}/${artifactWithGroup}</mainClassPath>
     </properties>
 
     <dependencies>
@@ -76,21 +60,15 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version>
+            <version>16</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version>
+            <version>16</version>
         </dependency>
 
         <!-- Junit -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -118,7 +96,6 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-
             <!-- Junit -->
             <plugin>
                 <!-- Plugin to make test works with junit 5-->
@@ -144,7 +121,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>${mainClassPath}.WindowApplication</mainClass>
+                            <mainClass>${artifactWithGroup}/${artifactWithGroup}.HelloApplication</mainClass>
                         </configuration>
                     </execution>
                 </executions>

@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.erev.cucei</groupId>
-    <artifactId>ventana</artifactId>
+    <artifactId>tokyo2020</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Ventana</name>
+    <name>Tokyo2020</name>
     <packaging>jar</packaging>
     <description>
-        SOR Homework 4: Graphic interface.
-        Objective: Know to implement the step by step an application with graphic components.
-        Description: Implement a easy graphic interface. The interface need a panel to add 3 buttons and implement a
-        windowListener, to only add the components as indicated in the requirements.
-        Requirement:
-        1. Implement a class to abstract a graphic interface.
-        2. The attributes needs the next components:
-        3. A Text Field added at the north
-        4. A Text Area added at the center
-        5. 3 buttons added at south (Is needed to ad a panel with the 3 Buttons).
-        6. Is required that the Window had a title, assigned size, that the text area is not editable, and allow to
-        close the window with the "X".
-        7. Add a constructor in the class
-        8. Before to execute the constructor, the object needs to had al the configured interface.
-        9. Do not add the event handling because this will be required in the Activity #5.
-        SOR Homework 5: Event handler
-        Objective: Learn to add the event handling through a listener.
-        Description: Extend the easy graphic interface from the Activity #5, adding the event handling for pushing the
-        buttons at the south area.
+        Exam 1: Implement java homework 4 and 5
     </description>
     <url>https://github.com/Arevalo-Edgar14/SOR/tree/main/${project.name}</url>
     <licenses>
@@ -144,7 +126,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>${mainClassPath}.WindowApplication</mainClass>
+                            <mainClass>${mainClassPath}.Tokyo2020Application</mainClass>
                         </configuration>
                     </execution>
                 </executions>
