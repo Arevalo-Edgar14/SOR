@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="202.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.erev.cucei.tokyo2020.Tokyo2020Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="202.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.erev.cucei.tokyo2020.Tokyo2020Controller">
    <top>
       <TextArea fx:id="textArea" editable="false" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </top>
@@ -12,10 +12,10 @@
    </bottom>
    <center>
       <HBox spacing="20.0" BorderPane.alignment="CENTER">
-         <Button id="readyButton" fx:id="readyButton" mnemonicParsing="false" onAction="#onReadyButtonClick"
+         <Button id="readyButton" mnemonicParsing="false" onAction="#onReadyButtonClick"
                  text="Ready, Set, Go"/>
-         <Button fx:id="secondButton" mnemonicParsing="false" onAction="#secondButtonClick" text="2"/>
-         <Button fx:id="thirdButton" mnemonicParsing="false" onAction="#thirdButtonClick" text="3"/>
+         <Button mnemonicParsing="false" onAction="#secondButtonClick" text="2"/>
+         <Button mnemonicParsing="false" onAction="#thirdButtonClick" text="3"/>
       </HBox>
    </center>
 </BorderPane>

@@ -5,27 +5,41 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 public class Tokyo2020Controller {
-    public Button secondButton;
-    public Button thirdButton;
-    public Button readyButton;
     @FXML
     private TextArea textArea;
     @FXML
     private TextField textField;
-    @FXML
-    private BorderPane borderPane;
+    private Stage stage;
 
-    public void onReadyButtonClick(ActionEvent event) {
+    public void setStage(Stage stage) {
+        this.stage = stage;
+        System.out.println( stage );
+    }
+
+    public void onReadyButtonClick() {
+        if (textField.getText().isEmpty()) return;
         textArea.appendText( textField.getText() + '\n' );
     }
 
-    public void secondButtonClick(ActionEvent event) {
+    public void secondButtonClick() {
+        if (textField.getText().isEmpty()) return;
+        textArea.appendText(
+          Arrays.toString( textField.getText()
+                                    .getBytes( StandardCharsets.UTF_8 ) )
+                .replace( String.valueOf( '[' ), "" )
+                .replace( ",", "" )
+                .replace( "]", "" ) + '\n'
+        );
     }
 
-    public void thirdButtonClick(ActionEvent event) {
-        borderPane.setPrefSize( 777,777 );
+    public void thirdButtonClick() {
+        stage.setHeight( 777 );
+        stage.setWidth( 777 );
     }
 }
