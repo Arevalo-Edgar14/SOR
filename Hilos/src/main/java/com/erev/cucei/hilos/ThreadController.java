@@ -24,10 +24,8 @@ public class ThreadController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         onActionButton.setOnAction( event1 -> {
-            if (thread1.isRunning())
-                thread1.toggleState();
-            else
-                thread1.play();
+            if (thread1.isRunning()) thread1.toggleState();
+            else thread1.play();
         } );
         thread1 = new CustomThread( 1000, firstTextArea );
         thread2 = new CustomThread( 2000, secondTextArea );
